@@ -1,0 +1,207 @@
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10%;
+}
+
+.container {
+    margin-bottom: 40px;
+    width: 90%;
+    color: #aeb0b3;
+
+
+}
+
+.profile {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #aeb0b3;
+    border-radius: 2%;
+
+
+
+}
+
+.profile img {
+    width: 120px;
+    height: 150%;
+    margin-right: 80px;
+}
+
+.profile .name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile .buttons {
+    margin-left: auto;
+}
+
+.profile button {
+    border: none;
+    padding: 03px 07px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.b1 {
+    background-color: #b87333;
+    color: white;
+}
+
+.b2 {
+    background-color: white;
+    color: #d67e03;
+}
+
+.profile button:hover {
+    background-color: white;
+    color: #b87333;
+}
+
+
+
+
+
+
+.search-container button[type=submit] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b87333;
+    color: white;
+    cursor: pointer;
+}
+
+div.pagination {
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+    width: 171px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+}
+
+div.pagination a {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1.3px solid #7f0206e8;
+    text-decoration: none;
+    /* no underline */
+    color: #000;
+    background-color: rgba(237, 168, 98, 0.463);
+    block-size: auto;
+}
+
+div.pagination a:hover,
+div.digg a:active {
+    border: 1px solid #ffe8a1;
+    color: #000;
+}
+
+div.pagination span.current {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #eee;
+    font-weight: bold;
+    background-color: #aeb0b3;
+    color: #FFF;
+}
+
+
+div.pagination span.disabled {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #EEE;
+    color: #DDD;
+    background-color: #aeb0b3;
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 50%;
+    height: 35%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin: 23%;
+    margin-top: 10%;
+
+
+}
+
+.modal {
+    text-align: center;
+    background-color: #000;
+    padding: 30px;
+    border: 1px solid #d67e03;
+    border-radius: 05%;
+
+
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #b87333;
+    color: #ffffff;
+    border: none;
+    border-radius: 05%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    margin-top: 20px;
+    background-color: #b87333;
+    color: #ffffff;
+    border: none;
+    border-radius: 05%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-container {
+
+    align-items: center;
+    margin-left: 28%;
+
+    margin-bottom: 10%;
+
+}
+
+.search-container input {
+    width: 50%;
+    border: 3px solid khaki;
+    padding: 11px;
+    border-radius: 30px;
+    margin-top: 40px;
+
+
+}
+
+.search-container i {
+    position: absolute;
+    margin-left: 845px;
+    margin-top: 40px;
+}

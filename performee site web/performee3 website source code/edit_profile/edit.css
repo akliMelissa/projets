@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./../images/images.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #d24200;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  color: #C15100;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+label[for="full-name"] {
+  display: inline-block;
+  width: 30%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #C15100;
+}
+
+input[name="full-name"] {
+  width: 65%;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #dcdcdc;
+  background-color: #1c1c1c;
+  color: #dcdcdc;
+  margin-bottom: 1rem;
+}
+
+input[type="text"][id="instagram"],
+input[type="text"][id="facebook"],
+input[type="text"][id="linkedin"],
+input[type="email"],
+input[type="text"][id="phone"] {
+  width: calc(50% - 1rem);
+  margin-right: 1rem;
+}
+
+
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #d24200;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 16px;
+  margin: 0 auto;
+  display: block;
+  }
+
+
+input[type="submit"]:hover {
+  background-color: #C15100;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+
+#add-title {
+ 
+  background-color: black; /* set desired color */
+  color: white; /* set desired text color */
+  padding: 10px;
+  border-radius: 5px;
+  border: solid rgba(255, 255, 0, 0.466);
+  margin-right: 90%;
+  margin-left:0%;
+}
+
+#title1 {
+  width: calc(60% - 1rem); /* set desired width */
+  font-size: 14px; /* set desired font size */
+}
+
+#fname, #lname ,#password {
+  width: calc(60% - 1rem); /* set desired width */
+  font-size: 14px; /* set desired font size */
+}
+
+
+textarea {
+  width: 58.5%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #dcdcdc;
+  background-color: #1c1c1c;
+  color: #dcdcdc;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+
+label[for="instagram"], label[for="facebook"], label[for="email"], label[for="linkedin"], label[for="phone"] 
+,label[for="description"]
+,label[for="profile-pic"],label[for="bg-pic"],label[for="title"],label[for="desc"],
+ label[for="height"] ,label[for="weight"],label[for="location"],label[for="birthdate"],
+ label[for="gender"],  label[for="job"]{
+  color: rgba(255, 255, 0, 0.683);
+  font-size: 18px;
+  
+}
+
+label[for="fname"], label[for="lname"],label[for="password"]{
+  color: rgb(122, 17, 17);
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+
+/* Title and Description Inputs */
+.title-label, .dynamically-added-title-label {
+  color: rgb(126, 27, 27);
+}
+
+.title-input, .dynamically-added-title-input,
+.desc-input, .dynamically-added-desc-input {
+  background-color: #1c1c1c;
+  color: #dcdcdc;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.dynamic-desc, .dynamically-added-desc-input {
+  color: #333;
+  font-family: Arial;
+}
+
+.dynamically-added-desc-label {
+  color: rgb(126, 27, 27);
+}
+
+
+
+
+
+
+#photo {
+  background-color:none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#photo::file-selector-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid rgba(255, 255, 0, 0.466);
+  margin-right:2%;
+  margin-left:-1%;
+}
+
+
+
+#photo::before {
+  content: 'Choose Image';
+  color: white;
+}
+
+#photo:hover::before {
+  text-decoration: underline;
+}
+
+#video {
+  color: white;
+  background-color: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#video::file-selector-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid rgba(255, 255, 0, 0.466);
+  margin-right:2%;
+  margin-left:-1%;
+}
+
+
+
+#video::before {
+  content: 'Choose video';
+  color: white;
+}
+
+#video:hover::before {
+  text-decoration: underline;
+}
+
+#profile-pic {
+  color: white;
+  background-color: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#profile-pic::file-selector-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid rgba(255, 255, 0, 0.466);
+  margin-right:2%;
+  margin-left:-1%;
+}
+
+
+
+#profile-pic::before {
+  content: 'Choose video';
+  color: white;
+}
+
+#profile-pic:hover::before {
+  text-decoration: underline;
+}
+
+
+
+
+
+#bg-pic {
+  color: white;
+  background-color: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#bg-pic::file-selector-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid rgba(255, 255, 0, 0.466);
+  margin-right:2%;
+  margin-left:-1%;
+}
+
+
+
+#bg-pic::before {
+  content: 'Choose video';
+  color: white;
+}
+
+#bg-pic:hover::before {
+  text-decoration: underline;
+}
+
+
+.add-title,
+.remove-title {
+  background-color: black;
+  border: 1px solid yellow;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.remove-title:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.gender-label {
+  color: rgba(255, 255, 0, 0.683);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#gender ,#job {
+  width: 50%;
+  padding: 0.5rem;
+  background-color: #1c1c1c;
+  color: #dcdcdc;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#gender , #job option {
+  background-color: #1c1c1c;
+  color: #dcdcdc;
+}
+
+.button{
+  background-color: #d24200;
+  color: #fff;
+  width:25%;
+
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 16px;
+  margin: 5% ;
+  display: block;
+  }
+

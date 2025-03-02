@@ -1,0 +1,347 @@
+
+.main-banner {
+  position: relative;
+  height: 90vh; /* Set the height of the banner to full viewport height */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.back-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.header-text{
+  margin-top: 15%;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-bottom: -20px;
+    
+    
+}
+.header-text p1{
+  margin-bottom: 02px;
+  
+  font-size: 70px;
+}
+.header-text p2{
+  margin-bottom: 02px;
+  color: #b87333;
+  font-size: 70px;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+.main-banner .buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content:center;
+  padding: 30px;
+
+  
+    
+}
+.border-button {
+  margin: 0 35px;
+  height: 55px;
+  width:200px;
+}
+
+.main-button{
+  margin: 0 35px;
+  height: 55px;
+  width:200px;
+}
+ 
+
+
+
+.border-button a {
+  font-size: 22px;
+  color: #b87333;
+  background-color: #060606;
+  border:2px solid #b87333;
+  text-decoration:none;
+  padding: 12px 30px;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+
+
+.border-button a:hover {
+  background-color: #fff;
+
+  color: #d29a33;
+  border: 1px solid #d29a33;
+}
+
+.main-button a {
+  font-size: 22px;
+  color: #b87333;
+  background-color: #000000;
+  border: 2px solid #b87333;
+  padding: 12px 13px;
+  display: inline-block;
+  font-weight: 500;
+  text-transform:capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  text-decoration:none;
+  border-radius: 5px;
+}
+
+
+
+.main-button a:hover {
+  background-color: #fff;
+  color: #d29a33;
+  border: 1px solid #fff;
+}
+
+.main-banner .col-lg-4{
+  margin: auto;
+  padding:0px;
+}
+
+
+
+section {
+  margin-top: 120px;
+}
+
+.section-heading {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.section-heading h2 {
+  margin-top: 0px;
+  line-height: 36px;
+  
+  font-weight: 700;
+  
+  text-transform: capitalize;
+  color: rgb(249, 244, 244);
+}
+
+.section-heading h2 em {
+  color: #d29a33;
+  font-style: normal;
+}
+
+
+.section-heading .line-dec {
+  width: 100px;
+  height: 40px;
+  margin: 0 auto 100px auto;
+}
+
+
+
+
+@media (max-width: 992px) {
+  
+  .gallery-image .item {
+    margin-bottom: 35px;
+    
+  }
+  
+}
+
+.talents-jobs {
+  position: relative; /* Ensure the parent container has a position */
+}
+
+.talents-jobs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/images.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity to make it darker/lighter */
+  z-index: -1; /* Ensure the pseudo-element is positioned behind other content */
+}
+
+.gallery {
+  margin-top: 0;
+  height: 750px;
+  margin-bottom: 70px;
+  
+  
+}
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  
+  
+}
+
+.gallery-image img {
+  height: 400px;
+  width: 250px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+  text-align: center;
+  
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 400px;
+  width: 200px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  color: #b87333;
+}
+
+.transparent-box {
+  height: 400px;
+  width: 200px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+  font-size: x-large;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+/* footer -------------------------------------------------------------------------------*/
+
+
+
+.ftco-section{
+  margin-top: 0;
+}
+
+
+@media (max-width: 768px) {
+  .header-text {
+    margin-top: 10%;
+  }
+  
+  .header-text p1,
+  .header-text p2 {
+    font-size: 40px;
+  }
+  
+  .section-heading h2 {
+    font-size: 24px;
+  }
+  
+  .section-heading .line-dec {
+    margin-bottom: 50px;
+  }
+  
+  .gallery-image img {
+    height: 300px;
+    width: 180px;
+  }
+  
+  .img-box {
+    height: 300px;
+    width: 180px;
+  }
+  
+  .caption {
+    font-size: large;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-text {
+    margin-top: 5%;
+  }
+  
+  .header-text p1,
+  .header-text p2 {
+    font-size: 30px;
+  }
+  
+  .section-heading h2 {
+    font-size: 20px;
+  }
+  
+  .section-heading .line-dec {
+    margin-bottom: 40px;
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 150px;
+  }
+  
+  .img-box {
+    height: 250px;
+    width: 150px;
+  }
+  
+  .caption {
+    font-size: medium;
+  }
+}

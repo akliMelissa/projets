@@ -1,0 +1,105 @@
+body {
+	background-image: url('../images/images.jpg');
+	background-color: #b87333;
+	background-size: cover;
+  }
+  .profile-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .profile-card {
+	width: 300px;
+	height: 400px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+  }
+  .profile-card:hover{
+	opacity:0.5;
+	transition: opacity 0.5s ease;
+  }
+  .background-image1 {
+	background-image: url('hanaa.png');
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+  }
+  
+  .background-image2 {
+	background-image: url('baraka.png');
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+  }
+
+  .background-image3 {
+	background-image: url('ff.png');
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+  }
+
+  .background-image4 {
+	background-image: url('nn.png');
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+  }
+
+  .background-image5 {
+	background-image: url('amina.png');
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+  }
+
+  .background-image6 {
+	background-image: url('m.png');
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+  }
+
+  
+
+
+
+  .profile-info {
+	padding: 20px;
+  }
+  
+  .profile-info h2 {
+	margin-top: 0;
+	color: #000000;
+  }
+  
+  .profile-info p {
+	color: #000000;
+	margin-bottom: 10px;
+	font-size: 16px;
+  }
+  
+  .more-button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+  }
+  
+  .more-button {
+	padding: 10px 20px;
+	background-color:#000000;
+	color: #b87333;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .more-button:hover {
+	background-color: white;
+  }
+  
