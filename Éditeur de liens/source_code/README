@@ -1,0 +1,21 @@
+Méthode de Compilation et d'Exécution
+
+1. Nettoyage préalable:
+Avant toute compilation, il est nécessaire de nettoyer les fichiers générés lors des compilations précédentes 
+(comme les fichiers objets .o) pour garantir un environnement propre. Pour cela, exécutez la commande suivante 
+dans le terminal : make clean 
+
+2. Compilation:
+Pour compiler le programme correspondant à une question spécifique, utilisez la commande suivante : 
+make q(numero de la question)
+
+3. Exécution:
+./bin/Program ./test/elf_test_file/example(num).o
+
+
+Recapitulatif des commandes pour avoir les affichages attendu:
+1. arm-none-eabi-readelf -h test/elf_test_file/example(num).o
+2. arm-none-eabi-readelf -S test/elf_test_file/example(num).o
+3. arm-none-eabi-readelf -x num_section test/elf_test_file/example(num).o
+4. readelf -s test/elf_test_file/example(num).o
+5. arm-none-eabi-readelf -r test/elf_test_file/example(num).o
