@@ -1,0 +1,8 @@
+TACHE8_tests/Asterix3.pbm
+500 500
+7142
+
+TACHE8_tests/Asterix3.pbm
+500 500
+7142
+
